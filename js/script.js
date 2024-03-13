@@ -36,8 +36,13 @@ createApp({
       }
     },
 
-    deleteTask(i){
-      this.todoList.splice(i, 1);
+    deleteTask(i, done){
+      if(done === true){
+        this.todoList.splice(i, 1);
+        this.erroreImput = '';
+      }else{
+        this.erroreImput = 'Errore! Questa task non é stata completata, quindi non puó essere eliminata.';
+      };
     },
 
     addTask(){
