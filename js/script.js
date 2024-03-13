@@ -21,7 +21,8 @@ createApp({
           text: 'Ripassare CSS',
           done: true,
         },
-      ]
+      ],
+      input: '',
     }
   },
 
@@ -36,6 +37,16 @@ createApp({
 
     deleteTask(i){
       this.todoList.splice(i, 1);
+    },
+
+    addTask(){
+      this.todoList.unshift(
+        {
+          text: this.input,
+          done: false,
+        }
+      )
+      this.input = ''
     }
   },
 
