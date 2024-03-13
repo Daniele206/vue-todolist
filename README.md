@@ -43,3 +43,4 @@ Oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il
 8. **Bonus1:** Creare un elemento che faccia da errore, far si che in questo elemento appaia l'errore quando la lunghezza della stringa dell'imput é inferiore a 4, (non pushare nell'array quando é inferiore a 4).
 9. **Bonus2:** Fatto prima, al funzionamento del done.
 10. **Bonus3** Far si che al click del cestino si possano eliminare solo le task sbarrate.
+11. **Bonus4** Crare un messaggio di avviso, che appare solo quando la lista é vuota.
