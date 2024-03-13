@@ -33,6 +33,10 @@ createApp({
         return ''
       }
     },
+
+    deleteTask(i){
+      this.todoList.splice(i, 1);
+    }
   },
 
   mounted(){

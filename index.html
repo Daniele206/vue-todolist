@@ -41,7 +41,7 @@
         v-for="(task, i) in todoList" 
         @click="task.done = !task.done">
           <span :class="taskDone(task.done)">{{task.text}}</span>
-          <i class="fa-solid fa-trash-can"></i>
+          <i @click.stop="deleteTask(i)" class="fa-solid fa-trash-can"></i>
         </li>
       </ul>
 
