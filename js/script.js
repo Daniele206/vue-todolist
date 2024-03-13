@@ -25,8 +25,14 @@ createApp({
     }
   },
 
-  metods:{
-
+  methods:{
+    taskDone(done){
+      if(done === true){
+        return 'task-done'
+      }else{
+        return ''
+      }
+    },
   },
 
   mounted(){

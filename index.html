@@ -37,8 +37,10 @@
 
     <div class="task-container">
       <ul>
-        <li v-for="(task, i) in todoList">
-          <span>{{task.text}}</span>
+        <li 
+        v-for="(task, i) in todoList" 
+        @click="task.done = !task.done">
+          <span :class="taskDone(task.done)">{{task.text}}</span>
           <i class="fa-solid fa-trash-can"></i>
         </li>
       </ul>
