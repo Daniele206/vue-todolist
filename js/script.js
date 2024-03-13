@@ -24,6 +24,7 @@ createApp({
       ],
       input: '',
       erroreImput: '',
+      emptyList: 'La lista é vuota.'
     }
   },
 
