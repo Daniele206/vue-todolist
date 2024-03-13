@@ -23,6 +23,7 @@ createApp({
         },
       ],
       input: '',
+      erroreImput: '',
     }
   },
 
@@ -40,13 +41,18 @@ createApp({
     },
 
     addTask(){
-      this.todoList.unshift(
-        {
-          text: this.input,
-          done: false,
-        }
-      )
-      this.input = ''
+      if(this.input.length > 3){
+        this.todoList.unshift(
+          {
+            text: this.input,
+            done: false,
+          }
+        );
+        this.input = '';
+        this.erroreImput = '';
+      }else{
+        this.erroreImput = 'Errore! Devi inserier almeno 4 caratteri.'
+      }
     }
   },
 
