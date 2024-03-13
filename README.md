@@ -32,3 +32,12 @@ Oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il
 4. Se la lista è vuota stampare “Non sono presenti task” al posto della lista
 
 ## Svolgimento
+
+1. Creare struttura Vue in js.
+2. Nel data andare a inserie un array di oggetti con 2 proprietá.
+3. Andare a stampare nell'HTML gli oggetti dell'array, sotto forma di lista.
+4. Rendere attiva la proprietá (done) se é true l'elemento é sbarrato, se é false non é sbarrato.
+5. Rendere attiva l'icona del cestino, per cancellare l'elemento della lista.
+6. Creare un elemento da usare con il v-model dell'imput.
+7. Al click del bottone o al click del tasto ENTER, questo elemento viene aggiunto come oggetto all'array.
+
