@@ -41,7 +41,7 @@
       <ul v-if="todoList.length > 0">
         <li 
         v-for="(task, i) in todoList" 
-        @click="task.done = !task.done">
+        @click="task.done = !task.done; erroreImput = ''">
           <span :class="taskDone(task.done)">{{task.text}}</span>
           <i @click.stop="deleteTask(i, task.done)" class="fa-solid fa-trash-can"></i>
         </li>
